@@ -36,12 +36,14 @@ public class Circle extends Shape{
 	}
 	
 	public double getArea() {
-		double area = 3.14 * (this.getRadius() * 2);
+		double area = 3.14 * this.getRadius() * this.getRadius() ;
+		System.out.println("El área del círculo es de " + area + " cm.");
 		return area;
 	}
 	
 	public double getPerimeter() {
 		double perimeter = 3.14 * this.getRadius();
+		System.out.println("El perímetro del círculo es de " + perimeter + " cm.");
 		return perimeter;
 	}
 

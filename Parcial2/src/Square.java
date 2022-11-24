@@ -29,7 +29,7 @@ public class Square extends Rectangle {
 
 	@Override
 	public String toString() {
-		return "Square [side=" + side + "]";
+		return "Square [side=" + side + "width=" + "length=" + "]";
 	}
 	
 	@Override

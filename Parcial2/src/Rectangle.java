@@ -1,5 +1,5 @@
 
-public abstract class Rectangle extends Shape {
+public class Rectangle extends Shape {
 	
 	private double width;
 	private double length;
@@ -49,11 +49,13 @@ public abstract class Rectangle extends Shape {
 	
 	public double getArea() {
 		double area = this.getLength() * this.getWidth();
+		System.out.println("El área del rectángulo es de " + area + " cm.");
 		return area;
 	}
 	
 	public double getPerimeter() {
 		double perimeter = 2 * this.getLength() + 2 * this.getWidth();
+		System.out.println("El área del rectángulo es de " + perimeter + " cm.");
 		return perimeter;
 	}
 	
