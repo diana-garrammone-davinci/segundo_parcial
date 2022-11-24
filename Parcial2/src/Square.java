@@ -29,14 +29,12 @@ public class Square extends Rectangle {
 
 	@Override
 	public String toString() {
-		//return "Square [side=" + side + "width=" + this.getWidth() + "length=" + this.getLength() + "]";
 		return "Square[side=" + this.side + " " + super.toString() + "}";
 		}
 	
 	@Override
 	public void setWidth(double side) {
 		super.setWidth(this.side);
-		System.out.println(super.getWidth());
 		
 	}
 	
@@ -45,6 +43,9 @@ public class Square extends Rectangle {
 		super.setLength(this.side);
 	}
 
+	
+
+	
 	
 	
 

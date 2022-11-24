@@ -9,6 +9,7 @@ public class Rectangle extends Shape {
 		this.setWidth(1);
 		this.setLength(1);
 	}
+	
 
 	public Rectangle(String color, boolean filled) {
 		super(color, filled);
@@ -50,13 +51,13 @@ public class Rectangle extends Shape {
 	
 	public double getArea() {
 		double area = this.getLength() * this.getWidth();
-		System.out.println("El área del rectángulo es de " + area + " cm.");
+		System.out.println("El área es de " + area + " cm.");
 		return area;
 	}
 	
 	public double getPerimeter() {
 		double perimeter = 2 * this.getLength() + 2 * this.getWidth();
-		System.out.println("El perímetro del rectángulo es de " + perimeter + " cm.");
+		System.out.println("El perímetro es de " + perimeter + " cm.");
 		return perimeter;
 	}
 	
