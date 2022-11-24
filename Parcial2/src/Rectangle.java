@@ -6,7 +6,8 @@ public class Rectangle extends Shape {
 
 	public Rectangle() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.setWidth(1);
+		this.setLength(1);
 	}
 
 	public Rectangle(String color, boolean filled) {
@@ -44,7 +45,7 @@ public class Rectangle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Rectangle [width=" + width + ", length=" + length + "]";
+		return "Rectangle [width=" + this.width + ", length=" + this.length + " " + super.toString() + "]";
 	}
 	
 	public double getArea() {
@@ -55,7 +56,7 @@ public class Rectangle extends Shape {
 	
 	public double getPerimeter() {
 		double perimeter = 2 * this.getLength() + 2 * this.getWidth();
-		System.out.println("El área del rectángulo es de " + perimeter + " cm.");
+		System.out.println("El perímetro del rectángulo es de " + perimeter + " cm.");
 		return perimeter;
 	}
 	

@@ -5,7 +5,7 @@ public class Circle extends Shape{
 
 	public Circle() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.setRadius(1);
 	}
 
 	public Circle(String color, boolean filled) {
@@ -32,7 +32,7 @@ public class Circle extends Shape{
 
 	@Override
 	public String toString() {
-		return "Circle [radius=" + radius + "]";
+		return "Circle [radius=" + this.radius + " " + super.toString() + "]";
 	}
 	
 	public double getArea() {

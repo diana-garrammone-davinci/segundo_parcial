@@ -5,7 +5,7 @@ public class Square extends Rectangle {
 
 	public Square() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.setSide(1);
 	}
 
 	public Square(double side) {
@@ -29,18 +29,24 @@ public class Square extends Rectangle {
 
 	@Override
 	public String toString() {
-		return "Square [side=" + side + "width=" + "length=" + "]";
-	}
+		//return "Square [side=" + side + "width=" + this.getWidth() + "length=" + this.getLength() + "]";
+		return "Square[side=" + this.side + " " + super.toString() + "}";
+		}
 	
 	@Override
 	public void setWidth(double side) {
+		super.setWidth(this.side);
+		System.out.println(super.getWidth());
 		
 	}
 	
 	@Override
 	public void setLength(double side) {
-		
+		super.setLength(this.side);
 	}
+
+	
+	
 
 	
 	

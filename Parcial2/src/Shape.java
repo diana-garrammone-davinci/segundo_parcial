@@ -11,7 +11,8 @@ public abstract class Shape {
 	}
 	
 	public Shape() {
-		
+		this.setColor("red");
+		this.setFilled(true);
 	}
 	
 	public String getColor() {
@@ -28,7 +29,7 @@ public abstract class Shape {
 	}
 	@Override
 	public String toString() {
-		return "Square [color=" + color + ", filled=" + filled + "]";
+		return "Shape [color=" + this.color + ", filled=" + this.filled + "]";
 	}
 	
 	public abstract double getArea();
